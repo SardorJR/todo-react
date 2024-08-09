@@ -34,11 +34,27 @@ button,img{
   margin: 0 auto;
 
   
-  h1 {
+  .neon {
+
     color: white;
     font-size: 45px;
+    font-weight: 700;
     text-align: center;
     margin-block: 20px 0;
+    letter-spacing: 4px;
+    text-shadow: 
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #fff,
+    0 0 50px #fff,
+    0 0 60px #fff,
+    0 0 70px #fff,
+    0 0 80px #fff,
+    0 0 90px #fff,
+    0 0 100px #fff,
+    0 0 150px #fff,
+    0 0 200px #fff;
   }
 
   .inp_box {
@@ -100,7 +116,7 @@ button,img{
       top: 0;
       left: -100%;
       width: 100%;
-      height: 2px;
+      height: 3px;
       background: linear-gradient(90deg, transparent, #ec21f3);
     }
     
@@ -113,7 +129,7 @@ button,img{
       bottom: 0;
       right: -100%;
       width: 100%;
-      height: 2px;
+      height: 3px;
       background: linear-gradient(270deg, transparent, #ec21f3);
     }
     
@@ -127,7 +143,7 @@ button,img{
       top: -100%;
       right: 0;
       height: 100%;
-      width: 2px;
+      width: 3px;
       background: linear-gradient(180deg, transparent, #ec21f3);
     }
     
@@ -141,7 +157,7 @@ button,img{
       bottom: -100%;
       left: 0;
       height: 100%;
-      width: 2px;
+      width: 3px;
       background: linear-gradient(360deg, transparent, #ec21f3);
     }
     
@@ -222,11 +238,15 @@ button,img{
           color: white;
           font-weight: 600;
           left: 20px;
-          top: 10px;
+          top: 12px;
 
           position: absolute;
 
           z-index: 1;
+          text-shadow: 
+          0 0 10px #fff,
+          0 0 20px #fff,
+          0 0 30px #fff;
         }
 
         h3::before {
@@ -274,6 +294,10 @@ button,img{
           color: white;
           left: 20px;
           bottom: 20px;
+          text-shadow: 
+          0 0 10px #fff,
+          0 0 20px #fff,
+          0 0 30px #fff;
         }
       }
     }

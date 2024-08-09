@@ -21,12 +21,16 @@ function App() {
   return (
     <>
       <div className="wrap">
-        <h1>Todo List</h1>
+        <div className='neon'>Todo List</div>
         <form onSubmit={Submit} className="inp_box">
           <input type="text" name='description' />
           <button className='todo'>
-            <span></span><span></span><span></span><span></span>
-            Add</button>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Add
+            </button>
         </form>
         <div className="flex">
 
