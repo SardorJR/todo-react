@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 
 function Todo({ user, removeTodo }) {
-    const [isChecked, setIsChecked] = useState(false);
 
-    const handleToggleCheck = () => {
-        setIsChecked(prevState => !prevState)
-    }
-
+    useEffect(() => {
+        document.querySelectorAll('h3').forEach(link => {
+          link.onclick=(event)=>{
+            event.preventDefault()
+            link.classList.toggle('checked')
+          }})
+      
+      }, [])
     return (
         <div className="box">
             <span></span>
             <div className="title-box">
-                <h3 className={isChecked ? 'checked' : ''}
-                    onClick={handleToggleCheck} >{user.description}</h3>
+                <h3>{user.description}</h3>
                 <img onClick={() => removeTodo(user.id)} src="/img/9024966_x_circle_light_icon (1).png" alt="" />
             </div>
             <div className="date">

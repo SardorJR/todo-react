@@ -106,7 +106,9 @@ body {
   background: #0c1022;
 
 }
-
+button,img{
+  cursor: pointer;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

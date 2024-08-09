@@ -13,19 +13,14 @@ function App() {
       id: Math.random(),
       date: new Date().toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' })
     }
-
     setUsers([...users, todo])
-
-
   }
   function removeTodo(id) {
     setUsers(users.filter(todo => todo.id !== id))
   }
   return (
     <>
-
       <div className="wrap">
-
         <h1>Todo List</h1>
         <form onSubmit={Submit} className="inp_box">
           <input type="text" name='description' />
