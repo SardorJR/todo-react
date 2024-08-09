@@ -24,7 +24,9 @@ function App() {
         <h1>Todo List</h1>
         <form onSubmit={Submit} className="inp_box">
           <input type="text" name='description' />
-          <button>Add</button>
+          <button className='todo'>
+            <span></span><span></span><span></span><span></span>
+            Add</button>
         </form>
         <div className="flex">
 
