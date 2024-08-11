@@ -10,6 +10,7 @@ function Todo({ user, removeTodo }) {
           }})
       
       }, [])
+      
     return (
         <div className="box">
             <span></span>
@@ -26,3 +27,6 @@ function Todo({ user, removeTodo }) {
 }
 
 export default Todo
+
+
+
