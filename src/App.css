@@ -271,6 +271,7 @@ img {
         }
 
         h3.checked:before {
+          
           transform: scaleX(1);
         }
 
@@ -324,5 +325,17 @@ img {
 }
 
 .box.hidden {
+  opacity: 0;
+}
+.box {
+  position: relative; 
+  transition: left 1s ease, opacity 0.5s ease;
+  left: 0;
+  opacity: 1;
+}
+
+.box.fade-out {
+  position: absolute;
+  left: -400px;
   opacity: 0;
 }
