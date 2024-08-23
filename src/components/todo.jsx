@@ -5,11 +5,11 @@ function Todo({ user, removeTodo }) {
 
    
     const handleRemove = () => {
-      setIsRemoving(true);
+      setIsRemoving(true)
      
       setTimeout(() => {
-        removeTodo(user.id);
-      }, 500); 
+        removeTodo(user.id)
+      }, 1000); 
     };
     useEffect(() => {
         document.querySelectorAll('h3').forEach(link => {

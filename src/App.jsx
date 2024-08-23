@@ -6,10 +6,11 @@ import Todo from "./components/todo";
 import axios from "axios";
 const initialState = {
   todos: []
-};
+}
 
 
 function reducer(state, action) {
+
   switch (action.type) {
     case "SET_TODOS":
       return state={ ...state, todos: action.payload };
@@ -25,7 +26,8 @@ function reducer(state, action) {
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
   useEffect(() => {
-    axios.get("http://localhost:8080/todos").then((res) => {
+    axios.get("http://localhost:8080/todos")
+    .then((res) => {
       dispatch({ type: "SET_TODOS", payload: res.data });
     });
   }, []);
@@ -41,7 +43,8 @@ function App() {
         year: "numeric",
       }),
     };
-    axios.post("http://localhost:8080/todos", todo).then((res) => {
+    axios.post("http://localhost:8080/todos", todo)
+    .then((res) => {
       dispatch({ type: "ADD_TODO", payload: res.data });
     });
   }
